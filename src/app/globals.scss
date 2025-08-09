@@ -35,8 +35,38 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+header {
+  background-color: #7b1e3c;
+  padding: 1rem 2rem;
+  color: white;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+
+      li {
+        a {
+          color: white;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
+}
+
+footer {
+  background-color: #7b1e3c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
